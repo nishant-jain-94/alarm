@@ -14,7 +14,6 @@ def get_time():
 		return "It's" + str(current_time.hour) + ' ' + str(current_time.minute) + "AM"
 
 def alarm():
-	"""Alarms the user with the current time every 30 minutes of the hour"""
 	engine = pyttsx.init()
 	engine.say(get_time())
 	engine.runAndWait()
